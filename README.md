@@ -1,8 +1,6 @@
 # dorew-site.github.io
 > Code Jekyll VF Lite cho DorewSite
 
-@moleys @kioku17
-
 **Bản Lite có gì hot?**
 - Chẳng có gì hot, hơn nữa, bản lite còn bị lược bỏ đi nhiều tính năng.
 - Bảng dữ liệu mới không tương ứng với dữ liệu cũ.
