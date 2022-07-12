@@ -1,38 +1,53 @@
 # dorew-site.github.io
-> Code Jekyll VF Lite cho DorewSite
+> Code Upload file lên IPFS cho DorewSite
 
-**Bản Lite có gì hot?**
-- Chẳng có gì hot, hơn nữa, bản lite còn bị lược bỏ đi nhiều tính năng.
-- Bảng dữ liệu mới không tương ứng với dữ liệu cũ.
+Demo:
 
-**Tính năng:**
-- Đăng ký, đăng nhập, danh sách thành viên
-- Thông tin thành viên, danh sách bài viết của thành viên đó
-- Phòng chat autoload, tải file lên ipfs và imgur qua chatbox
-- Tạo, chỉnh sửa, xoá bài viết và chuyên mục
-- Bài viết VIP, bình luận bài viết
+![](https://i.imgur.com/JTt9yzB.png)
 
-**Một số hình ảnh:**
+Sử dụng https://nft.storage để upload lên ipfs ==> **lấy API Key của** https://nft.storage
+
+Đây là Template mặc định khi bạn mới bắt đầu sử dụng DorewSite, nếu bạn không may đã làm thất lạc nó, bạn có thể cài đặt lại như sau:
+- Tải zip bên dưới về
+
+![](https://i.imgur.com/pRzMfoz.png)
 
 
-![](https://i.imgur.com/0kuLQ7I.png)
-
-
-![](https://i.imgur.com/7f91opi.png)
-
-
-![](https://i.imgur.com/TRtZfAN.png)
-
-
-![](https://i.imgur.com/eMw0vbZ.png)
-
-
-![](https://i.imgur.com/1gHJQT5.png)
-
-
-**Hướng dẫn cài đặt:**
 - Truy cập: **/cms** -> Đăng nhập -> **Sao lưu** -> **Tải lên template** -> Chọn zip vừa tải về -> **Sử dụng**
-- Tệp **_install** dùng để khởi tạo các bảng dữ liệu của code, vui lòng không xoá nó.
-- Nếu cơ sở dữ liệu đã có sẵn các bảng này (trong _install) nhưng khác cấu trúc, hãy backup và dọn dẹp chúng, sau đó bắt đầu cài đặt dữ liệu mới: truy cập vào index của website.
 
-*Vì đây là bản lite nên khá sơ sài, ae múc về thêm mắm thêm muối vào cho vừa vị nha*
+![](https://i.imgur.com/nsjVRWx.png)
+
+
+![](https://i.imgur.com/OL6qhsw.png)
+
+
+![](https://i.imgur.com/zr41KOA.png)
+
+
+![](https://i.imgur.com/PQarWGW.png)
+
+
+- Truy cập **phpMyAdmin**, tạo bảng **ipfs** có cấu trúc như hình:
+
+![](https://i.imgur.com/4hZL8Ue.png)
+
+
+Hoặc tạo bảng trên với code twig:
+
+```twig
+{% set time = 'int(11) NOT NULL' %}
+{% set filename = 'varchar(255) NOT NULL' %}
+{% set filesize = 'int(11) NOT NULL' %}
+{% set cid = 'varchar(255) NOT NULL' %}
+{% set password = 'varchar(255) NOT NULL' %}
+{% set passphrase = 'varchar(255) NOT NULL' %}
+{% set ip = 'varchar(255) NOT NULL' %}
+{% set user_agent = 'varchar(255) NOT NULL' %}
+
+{% set structure = {'time':time,'filename':filename,'filesize':filesize,'CID':cid,'password':password,'passphrase':passphrase,'ip':ip,'user_agent':user_agent} %}
+
+{% do create_table_with_column('ipfs', structure) %}
+```
+
+
+- Truy cập **/cms**, mở file **index**, sửa lại **API Key** của bạn.
