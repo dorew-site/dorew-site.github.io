@@ -151,9 +151,11 @@ function win() {
     if (state.score > 0) {
         // save score to database
         $.get('/api/user', function (data) {
-            var oldFrog = data.frog;
-            var saveFrog = oldFrog + state.score;
-            $.post('/api/user/post', {frog: saveFrog});
+            $.post('/api/user/post', {
+                frog: state.score
+            }, function (data) {
+                console.log(data);
+            });
         });
     }
 }
