@@ -1,9 +1,8 @@
 document.onkeydown = function (e) {
-    if (e.keyCode == 123
+    if (e.keyCode == 123 
         || e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)
         || e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)
         || e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)
-        || window.console && window.console.log
     ) {
         window.location.href = '/play/god-wealth';
         return false;
