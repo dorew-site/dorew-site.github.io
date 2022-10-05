@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html lang="vi">
+
+<head>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="google-site-verification" content="XZSx4SX3UMbXV6t4HXrC6qk0gM96MVMUOt1EasWssW0" />
+    <title>Dorew</title>
+    <meta name="description" content="Thích Ngao Du" />
+    <link rel="canonical" href="https://dorew.org/?page=1" />
+    <link rel="shortcut icon" href="https://i.imgur.com/2pfDfoN.png" />
+    <meta property="og:site_name" content="Dorew" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dorew" />
+    <meta property="og:description" content="Thích Ngao Du" />
+    <meta property="og:url" content="https://dorew-site.github.io" />
+    <meta property="og:image" content="https://i.imgur.com/2pfDfoN.png" />
+    <meta property="twitter:title" content="Dorew" />
+    <meta property="twitter:description" content="Thích Ngao Du" />
+    <meta property="twitter:image" content="https://i.imgur.com/2pfDfoN.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta name="theme-color" content="#22292F" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+
+<body data-instant-allow-query-string>
+    <div class="container">
+        <div class="cover-photo">
+            <img src="https://i.imgur.com/2pfDfoN.png" class="profile">
+        </div>
+        <div class="profile-name">DorewSite</div>
+        <p class="about">Một sản phẩm của<br />Dorew</p>
+        <a href="htts://github.com/dorew-site"><button class="one-btn">Github</button></a>
+        <a href="http://dorew.gq"><button class="two-btn">Website</button></a>
+    </div>
+
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            background: url(https://i.imgur.com/CyLsCBq.jpg);
+            background-color: #f2f3f4;
+            background-attachment: fixed;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .container {
+            user-select: none;
+            margin: 100px auto;
+            background: #231e39;
+            color: #b3b8cd;
+            border-radius: 5px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
+        }
+
+        .cover-photo {
+            background-image: url(https://i.imgur.com/kYLBYth.jpgg);
+            background-repeat: no repeat;
+            height: 160px;
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .profile {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin: 93px 0 0 -175px;
+            border: 1px solid #1f1a32;
+            padding: 7px;
+            background: #292343;
+        }
+
+        .profile-name {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 27px 0 0 120px;
+        }
+
+        .about {
+            margin-top: 35px;
+            line-height: 21px;
+        }
+
+        button {
+            margin: 10px 0 40px 0;
+        }
+
+        .one-btn,
+        .two-btn {
+            background: #03bfbc;
+            border: 1px solid #03bfbc;
+            padding: 10px 25px;
+            color: #231e39;
+            border-radius: 3px;
+            font-family: Montserrat, sans-serif;
+            cursor: pointer;
+        }
+
+        .two-btn {
+            margin-left: 10px;
+            background: transparent;
+            color: #02899c;
+        }
+
+        .two-btn:hover {
+            color: #231e39;
+            background: #03bfbc;
+            transition: .5s;
+        }
+
+        .container i {
+            padding-left: 20px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .container i:hover {
+            color: #03bfbc;
+        }
+    </style>
+</body>
+
+</html>
